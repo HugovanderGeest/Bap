@@ -6,6 +6,9 @@
        </head> 
        <body>
 
+       <a href="voeg.php"><button id="voeg" href="#" class="groen">Voegtoe</button></a>
+       <a href="verwijder.php"><button id="verwijder" class="rood">verwijder</button></a>
+
 <?php 
 
 $hostname='localhost';
@@ -37,5 +40,7 @@ foreach ($statement as $row) { ?>
     <?php
 
 }?>
+
+
 </body>
 </html>

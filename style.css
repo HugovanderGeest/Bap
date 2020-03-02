@@ -10,6 +10,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr ;
 	grid-template-areas: 
+"voeg verwijder"
 "num-1 num-2"
 "num-3 num-4"
 "num-5 num-6"
@@ -19,7 +20,8 @@ body {
 
 }
  
-
+#voeg {grid-area: voeg; }
+#verwijder {grid-area: verwijder; }
 #num-1 {grid-area: num-1; }
 #num-2  {grid-area: num-2; }
 #num-3  {grid-area: num-3; }
@@ -44,4 +46,25 @@ border-radius: 40px;
 img {
 	width: 100%;
 	border-radius: 20px;
+}
+
+button {
+	margin: 10px;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: transparent;
+	transition: 1s;
+}
+
+.groen:hover {
+	background-color: green;
+}
+
+.rood:hover {
+	background-color: red;
 }
