@@ -3,49 +3,7 @@
 	margin: 0;
 }
 
-body {
-	grid-gap: 2em;
-	grid-template-columns: 1fr;
-	grid-template-areas: 
-"num-1"
-"num-2"
-"num-3"
-"num-4"
-"num-5"
-"num-6"
-"num-7"
-"num-8"
-"num-9"
-"num-10"; 
-}
 
-#num-1 {grid-area: num-1; }
-#num-2  {grid-area: num-2; }
-#num-3  {grid-area: num-3; }
-#num-4  {grid-area: num-4; }
-#num-5  {grid-area: num-5 ; }
-#num-6  {grid-area: num-6; }
-#num-7  {grid-area: num-7; }
-#num-8  {grid-area: num-8; }
-#num-9  {grid-area: num-9; }
-#num-10  {grid-area: num-10; }
-#num-11  {grid-area: num-11; }
-#num-12  {grid-area: num-12; }
-#num-13 {grid-area: num-13; }
-#num-14 {grid-area: num-14; }
-#num-15  {grid-area: num-15; }
-#num-16  {grid-area: num-16; }
-#num-17  {grid-area: num-17; }
-#num-18  {grid-area: num-18; }
-#num-19  {grid-area: num-19; }
-#num-20  {grid-area: num-20; }
-#num-21  {grid-area: num-21; }
-#num-22  {grid-area: num-22; }
-#num-23  {grid-area: num-23; }
-#num-24  {grid-area: num-24; }
-
-
-@media screen and (min-width: 700px) {
 
 body {
 	grid-gap: 2em;
@@ -57,16 +15,23 @@ body {
 "num-5 num-6"
 "num-7 num-8"
 "num-9 num-10"
-"num-11 num-12"
-"num-13 num-14"
-"num-15 num-16"
-"num-17 num-18"
-"num-19 num-20"
-"num-21 num-23"
-"num-23 num-24";
+;
 
 }
-} 
+ 
+
+#num-1 {grid-area: num-1; }
+#num-2  {grid-area: num-2; }
+#num-3  {grid-area: num-3; }
+#num-4  {grid-area: num-4; }
+#num-5  {grid-area: num-5 ; }
+#num-6  {grid-area: num-6; }
+#num-7  {grid-area: num-7; }
+#num-8  {grid-area: num-8; }
+#num-9  {grid-area: num-9; }
+#num-10  {grid-area: num-10; }
+
+
 
 #num-1 , #num-2 , #num-3 , #num-4 , #num-5 , #num-6, #num-7 , #num-8 , #num-9 , #num-10 {
 text-align: center;
