@@ -7,7 +7,6 @@
        <body>
 
        <a href="voeg.php"><button id="voeg" href="#" class="groen">Voegtoe</button></a>
-       <a href="verwijder.php"><button id="verwijder" class="rood">verwijder</button></a>
 
 <?php 
 
@@ -34,6 +33,9 @@ foreach ($statement as $row) { ?>
     echo '<p><b class="text">Album: </b></p>' . $row['album'];
     echo '<p><b class="text">Duur: </b></p>' . $row['duur'] . ' Sec';
     echo '<p><img src="' . $row['afbeelding'] . '"></p>'; 
+    echo '<a href="nee.php?id=' . $row['id'] . '">
+    <button id="verwijder" class="rood">verwijder</button></a>'; 
+
     ?> 
     </div> 
     

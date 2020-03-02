@@ -1,3 +1,4 @@
+
 <?php 
 
 $hostname='localhost';
@@ -13,25 +14,14 @@ try {
     $statement = $connection->query($query);
 } catch(PDOException $e) {
     // echo 'Fout bij database verbinding: ' . $e->getMessage() . ' op regel ' . $e->getLine() . ' in ' . $e->getFile();
-}
+} 
 
-$titel = $_POST["titel"];
-$artiest = $_POST["artiest"];
-$album = $_POST["album"];
-$duur = $_POST["duur"];
-$afbeelding = $_POST["afbeelding"];
+$id = $_GET['id'];
+$parameters = ['id' => $id,];
+$sql = 'DELETE FROM afspeellijst WHERE id = :id';
+$staatmunt = $connection->prepare($sql);
+$staatmunt->execute($parameters);
 
-$staatmunt = $connection->prepare("INSERT INTO 
-afspeellijst (titel, artiest, album, duur, afbeelding)
-    VALUES (:titel, :artiest, :album, :duur, :afbeelding)");
-
-    $staatmunt->bindParam(':titel', $titel);
-    $staatmunt->bindParam(':artiest', $artiest);
-    $staatmunt->bindParam(':album', $album);
-    $staatmunt->bindParam(':duur', $duur);
-    $staatmunt->bindParam(':afbeelding', $afbeelding);
-
-    $staatmunt->execute();
 ?>
 
 <html> 
@@ -39,11 +29,9 @@ afspeellijst (titel, artiest, album, duur, afbeelding)
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <body>
-        <h1 class="vul"> de informatie is verwerkt</h1><br><br>
+        <h1 class="vul"> de informatie is verwijdert</h1><br><br>
         <a href="index.php"><input class="knop" type="button" value="Teruggaan"></a>
 
 </body>
 </head>
 </html>
-
-        

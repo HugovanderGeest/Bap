@@ -34,19 +34,19 @@ try{
     <head>
     <body>
         <main>
-   <a href="index.php"><input class="vul" type="button" value="Teruggaan"></a>
+   <a href="index.php"><input class="knop" type="button" value="Teruggaan"></a>
    <aside>
  <form action="verwerk.php" method="post">
 <p>Titel: </p><input class="vul" type="text" name="titel" placeholder="titel" >
 
-<p>Artiest(en): </p><input class="vul" type="text" name="artiest" placeholder="artiest" >
+<p>Artiest: </p><input class="vul" type="text" name="artiest" placeholder="artiest" >
 
-<p>*Album: </p><input class="vul" type="text" name="album" placeholder="album" >
+<p>Album: </p><input class="vul" type="text" name="album" placeholder="album" >
 
 <p>Afspeelduur: </p> <input class="vul" type="text" name="duur" placeholder="duur">
 
 <p>Afbeeldings-URL: </p><input class="vul" type="text" name="afbeelding" placeholder="afbeelding" >
-<input type="submit">
+<input class="knop" type="submit">
  </form>
    </aside>
         </main>
