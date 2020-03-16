@@ -35,6 +35,8 @@ foreach ($statement as $row) { ?>
     echo '<p><img src="' . $row['afbeelding'] . '"></p>'; 
     echo '<a href="nee.php?id=' . $row['id'] . '">
     <button id="verwijder" class="rood">verwijder</button></a>'; 
+    echo '<a href="edit.php?id=' . $row['id'] . '">
+    <button id="pas" class="rood">pas aan</button></a>'; 
 
     ?> 
     </div> 

@@ -31,11 +31,19 @@ body {
 #num-8  {grid-area: num-8; }
 #num-9  {grid-area: num-9; }
 #num-10  {grid-area: num-10; }
-#num-29  {grid-area: num-29; }
+#num-31  {grid-area: num-31; }
+#num-32  {grid-area: num-32; }
+#num-33  {grid-area: num-33; }
+#num-34  {grid-area: num-34; }
+#num-35  {grid-area: num-35; }
+#num-36  {grid-area: num-36; }
+#num-37  {grid-area: num-37; }
+#num-38  {grid-area: num-38; }
+#num-39  {grid-area: num-39; }
 
 
 
-#num-1 , #num-2 , #num-3 , #num-4 , #num-5 , #num-6, #num-7 , #num-8 , #num-9 , #num-10, #num-29 {
+#num-1 , #num-2 , #num-3 , #num-4 , #num-5 , #num-6, #num-7 , #num-8 , #num-9 , #num-10, #num-32 , #num-33 , #num-34 , #num-35 , #num-36 , #num-37 , #num-38 , #num-39 {
 text-align: center;
 font-size: 150%;
 padding: 20px;
