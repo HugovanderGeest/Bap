@@ -1,0 +1,23 @@
+* {
+    font-size: 20px;
+    background-color: hotpink;
+    color: white;
+}
+
+input {
+    border-color: transparent;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+input:hover {
+    background-color: green;
+}
+
+img {
+    max-width: 100px;
+}
