@@ -45,12 +45,10 @@ try{
 
 <p>Afspeelduur: </p> <input type="text" name="duur" placeholder="duur">
 <br><br>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-    foto:<br><br>
-    <input type="file" name="img" id="fileToUpload"><br><br>
-    <input type="submit" name="img" value="Upload Image" name="submit">
+<form action="bewaar.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="img" id="fileToUpload" accept="image/*"/>
+    <input type="submit" value="fileToUpload" name="submit">
     </form>
-
  </form>
    </aside>
         </main>
