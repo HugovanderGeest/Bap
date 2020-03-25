@@ -41,7 +41,7 @@ try{
 
 <p>email: </p><input  type="password" name="wachtwoord" placeholder="wachtwoord" require>
 <br><br>
-<input value="Maak acound aan" type="submit">
+<input value="Maak account aan" type="submit">
  </form>
    </aside>
 </div>
