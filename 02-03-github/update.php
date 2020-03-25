@@ -37,12 +37,12 @@ try {
     $statement = $connection->prepare($sql);
 
     $data = [
-        `id` => $id,
-        `titel` => $titel,
-        `artiest` => $artiest,
-        `album` => $album,
-        `duur` => $duur,
-        `afbeelding` => $afbeelding,
+        'id' => $id,
+        'titel' => $titel,
+        'artiest' => $artiest,
+        'album' => $album,
+        'duur' => $duur,
+        'afbeelding' => $afbeelding,
 
     ];
 

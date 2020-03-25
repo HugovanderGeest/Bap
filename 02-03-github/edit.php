@@ -42,7 +42,7 @@ try {
    <aside>
  <form action="update.php" method="post">
  <input type="hidden" name="id" value="<?php echo $track['id']?>"/>
-<p>Titel: </p><input class="vul" type="text" value="<?php echo $track['titel']?>" fname="titel"  >
+<p>Titel: </p><input class="vul" type="text" value="<?php echo $track['titel']?>" name="titel"  >
 
 <p>Artiest: </p>
 <input class="vul" type="text" value="<?php echo $track['artiest']?>" name="artiest"  >
