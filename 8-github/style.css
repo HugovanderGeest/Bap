@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+	margin: 0;
+}
+
+
+
+body {
+	grid-gap: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-areas: 
+"voeg voeg"
+"num-1 num-2"
+"num-3 num-4"
+"num-5 num-6"
+"num-7 num-8"
+"num-9 num-10"
+"num-29 num-12";
+}
+ 
+#voeg {grid-area: voeg; }
+#verwijder {grid-area: verwijder; }
+#num-1 {grid-area: num-1; }
+#num-2  {grid-area: num-2; }
+#num-3  {grid-area: num-3; }
+#num-4  {grid-area: num-4; }
+#num-5  {grid-area: num-5 ; }
+#num-6  {grid-area: num-6; }
+#num-7  {grid-area: num-7; }
+#num-8  {grid-area: num-8; }
+#num-9  {grid-area: num-9; }
+#num-10  {grid-area: num-10; }
+#num-31  {grid-area: num-31; }
+#num-32  {grid-area: num-32; }
+#num-33  {grid-area: num-33; }
+#num-34  {grid-area: num-34; }
+#num-35  {grid-area: num-35; }
+#num-36  {grid-area: num-36; }
+#num-37  {grid-area: num-37; }
+#num-38  {grid-area: num-38; }
+#num-39  {grid-area: num-39; }
+
+
+
+#num-1 , #num-2 , #num-3 , #num-4 , #num-5 , #num-6, #num-7 , #num-8 , #num-9 , #num-10, #num-32 , #num-33 , #num-34 , #num-35 , #num-36 , #num-37 , #num-38 , #num-39 {
+text-align: center;
+font-size: 150%;
+padding: 20px;
+background-color: #efefef;
+border-radius: 40px;
+}
+
+img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+button {
+	margin: 10px;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: transparent;
+	transition: 1s;
+}
+
+.groen:hover {
+	background-color: green;
+}
+
+.rood:hover {
+	background-color: red;
+}
+
+ main, .vul {
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	text-align: center;
+	margin: auto auto;
+	align-items: center;
+	padding: 20px;
+	font-size: 25px;
+	background-color: #efefef;
+	color: black; 
+	width: 100vw;
+}
+
+.knop {
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: transparent;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	transition: 1s;
+	margin: 10px;
+}
+
+.knop:hover {
+	background-color: green;
+}
+
