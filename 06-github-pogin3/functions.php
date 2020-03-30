@@ -4,27 +4,26 @@ session_start();
 
 function dbConnect() {
 
+
 $hostname='localhost';
 $username='root';
 $password='';
-$database='incriptww';
+$database='muziek';
 
 try {
     $connection = new PDO('mysql:host='.$hostname.';dbname='.$database, $username, $password);
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Verbinding is gemaakt!";
-    $query = "SELECT * FROM ww";
-    $statement = $connection->query($query);
-} catch(PDOException $e) {
-    echo 'Fout bij database verbinding: ' . $e->getMessage() . ' op regel ' . $e->getLine() . ' in ' . $e->getFile();
+    $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDOl::FETCH_ASSOC );
+
+    return $connection;
+
+} catch (PDOException $e){
+    echo $e->getMessage();
+    exit();
 }
 
-try{
-    $query = "SELECT * FROM ww";
-    $statement = $connection->query($query);
-} catch (PDOException $e){
-    echo 'Fout bij SQL query:<br>' . $e->getMessage() . ' op regel ' . $e->getLine() . ' in ' . $e->getFile();
-}
+return false;
+
 }
 
 function loginIfNeeded() {
