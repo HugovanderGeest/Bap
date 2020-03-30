@@ -1,7 +1,7 @@
 <?php 
-require 'functions.php'
-$connection_ = dbConnect(); 
-$statement = $connection->query('SELECT * FROM ‵ww‵');
+require 'functions.php';
+$connection = dbConnect(); 
+$statement = $connection->query('SELECT * FROM ‵afspeellijst‵ ');
 ?>
 
 <html lang="nl">
