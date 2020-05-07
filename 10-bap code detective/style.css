@@ -1,0 +1,81 @@
+* {
+  font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  padding: 20px;
+  margin: 0;
+}
+
+.person-table {
+  border: 1px solid #888;
+}
+
+.person-table tr:nth-child(2) {
+  background: #cdcdcd;
+}
+
+form {
+  color: aliceblue;
+  background: gray;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+label {
+  font-size: 20px;
+  padding: 30px;
+}
+
+input,
+textarea {
+  border-radius: 30px;
+  font-size: 30px;
+}
+
+.form-row {
+  display: flex;
+  align-content: center;
+}
+
+.form-row label {
+  width: 200px;
+  text-align: right;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 400px;
+}
+
+textarea {
+  height: 300px;
+}
+
+button {
+  float: right;
+  border: 0px;
+  background: gray;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 3px 7px;
+  font-size: 18px;
+  margin: 3px;
+}
+
+a {
+  margin: 450px;
+  text-decoration: none;
+  color: white;
+}
+
+.groter {
+  background-color: green;
+  font-size: 50px;
+}
+
+.groter2 {
+  background-color: red;
+  font-size: 30px;
+}
